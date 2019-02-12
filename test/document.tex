@@ -1,0 +1,41 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+\usepackage[scale=0.8]{geometry}
+\recomputelengths                             % required when changes are made to page layout lengths
+
+% personal data
+\firstname{first}
+\familyname{last}
+%\quote{}               % optional, remove the line if not wanted
+\address{123 First St}{Somewhere, CA 90210}    % optional, remove the line if not wanted
+\mobile{555.555.5555}                    % optional, remove the line if not wanted
+\email{me@me.com}                      % optional, remove the line if not wanted
+\extrainfo{info} % optional, remove the line if not wanted
+
+\usepackage{lipsum}
+\begin{document}
+\vspace*{-2\baselineskip}
+\maketitle
+\vspace{-1.5\baselineskip}
+\section{Summary}
+\cvline{}{\lipsum[1-2]}
+
+\section{Technical Skills}
+\cvline{A great skill}{\lipsum[3]}
+
+\section{Experience}
+\cventry{2000--present}{Space occupier}{freelance}{San Francisco}{}{%
+\lipsum[5]
+two more lines two more lines two more lines two more lines two more lines two more
+two more lines two more lines two more lines two more lines two more lines two more
+}
+
+\closesection{}                   % needed to renewcommands
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+\end{document}
